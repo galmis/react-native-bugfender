@@ -1,0 +1,30 @@
+{
+  "name": "react-native-bugfender",
+  "version": "0.0.1",
+  "description": "react-native solution for bugfender mobile logging tool",
+  "main": "bugfender.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Giedrius Galminas <galminasgiedrius@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "react": "^15.1.0",
+    "react-native": "^0.27.2"
+  },
+  "peerDependencies": {
+    "react-native": "^0.27.2"
+  },
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-native": "^0.27.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reptilijonas/react-native-bugfender.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Reptilijonas/react-native-bugfender/issues"
+  },
+  "homepage": "https://github.com/Reptilijonas/react-native-bugfender#readme"
+}

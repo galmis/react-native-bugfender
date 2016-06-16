@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84BC08A41D10B8AC00339223 /* RNBugfender.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84BC08A31D10B8AC00339223 /* RNBugfender.h */; };
+		84BC08A61D10B8AC00339223 /* RNBugfender.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC08A51D10B8AC00339223 /* RNBugfender.m */; };
+		84D6F71C1D134DC800FDC986 /* BugfenderSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D6F71B1D134DC800FDC986 /* BugfenderSDK.framework */; };
+		84D6F71E1D13523000FDC986 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D6F71D1D13523000FDC986 /* SystemConfiguration.framework */; };
+		84D6F7201D13524500FDC986 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D6F71F1D13524500FDC986 /* MobileCoreServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84BC089E1D10B8AC00339223 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				84BC08A41D10B8AC00339223 /* RNBugfender.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		84BC08A01D10B8AC00339223 /* libRNBugfender.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNBugfender.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BC08A31D10B8AC00339223 /* RNBugfender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNBugfender.h; sourceTree = "<group>"; };
+		84BC08A51D10B8AC00339223 /* RNBugfender.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNBugfender.m; sourceTree = "<group>"; };
+		84D6F71B1D134DC800FDC986 /* BugfenderSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BugfenderSDK.framework; sourceTree = "<group>"; };
+		84D6F71D1D13523000FDC986 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		84D6F71F1D13524500FDC986 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84BC089D1D10B8AC00339223 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D6F7201D13524500FDC986 /* MobileCoreServices.framework in Frameworks */,
+				84D6F71E1D13523000FDC986 /* SystemConfiguration.framework in Frameworks */,
+				84D6F71C1D134DC800FDC986 /* BugfenderSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84BC08971D10B8AC00339223 = {
+			isa = PBXGroup;
+			children = (
+				84D6F71F1D13524500FDC986 /* MobileCoreServices.framework */,
+				84D6F71D1D13523000FDC986 /* SystemConfiguration.framework */,
+				84BC08A21D10B8AC00339223 /* RNBugfender */,
+				84BC08A11D10B8AC00339223 /* Products */,
+				84D6F71B1D134DC800FDC986 /* BugfenderSDK.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		84BC08A11D10B8AC00339223 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84BC08A01D10B8AC00339223 /* libRNBugfender.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84BC08A21D10B8AC00339223 /* RNBugfender */ = {
+			isa = PBXGroup;
+			children = (
+				84BC08A31D10B8AC00339223 /* RNBugfender.h */,
+				84BC08A51D10B8AC00339223 /* RNBugfender.m */,
+			);
+			path = RNBugfender;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84BC089F1D10B8AC00339223 /* RNBugfender */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84BC08A91D10B8AC00339223 /* Build configuration list for PBXNativeTarget "RNBugfender" */;
+			buildPhases = (
+				84BC089C1D10B8AC00339223 /* Sources */,
+				84BC089D1D10B8AC00339223 /* Frameworks */,
+				84BC089E1D10B8AC00339223 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNBugfender;
+			productName = RNBugfender;
+			productReference = 84BC08A01D10B8AC00339223 /* libRNBugfender.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84BC08981D10B8AC00339223 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = galminas;
+				TargetAttributes = {
+					84BC089F1D10B8AC00339223 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 3575K6D48K;
+					};
+				};
+			};
+			buildConfigurationList = 84BC089B1D10B8AC00339223 /* Build configuration list for PBXProject "RNBugfender" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84BC08971D10B8AC00339223;
+			productRefGroup = 84BC08A11D10B8AC00339223 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84BC089F1D10B8AC00339223 /* RNBugfender */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84BC089C1D10B8AC00339223 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BC08A61D10B8AC00339223 /* RNBugfender.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		84BC08A71D10B8AC00339223 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain,
+					"$(SRCROOT)/../../React/**",
+					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/node_modules/react-native/React/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84BC08A81D10B8AC00339223 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain,
+					"$(SRCROOT)/../../React/**",
+					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/node_modules/react-native/React/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84BC08AA1D10B8AC00339223 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		84BC08AB1D10B8AC00339223 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84BC089B1D10B8AC00339223 /* Build configuration list for PBXProject "RNBugfender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BC08A71D10B8AC00339223 /* Debug */,
+				84BC08A81D10B8AC00339223 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84BC08A91D10B8AC00339223 /* Build configuration list for PBXNativeTarget "RNBugfender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BC08AA1D10B8AC00339223 /* Debug */,
+				84BC08AB1D10B8AC00339223 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84BC08981D10B8AC00339223 /* Project object */;
+}
