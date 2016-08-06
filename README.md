@@ -11,3 +11,5 @@ set up:
 3. Go to Build Settings and search for "framework search path". Add the following item to it (select recursive):
 
 $(PROJECT_DIR)/../node_modules/react-native-bugfender [recursive]
+
+4. Add your bugfender key to your AppDelegate.m
