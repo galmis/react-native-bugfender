@@ -1,6 +1,6 @@
 {
   "name": "react-native-bugfender",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "react-native solution for bugfender mobile logging tool",
   "main": "bugfender.js",
   "scripts": {
