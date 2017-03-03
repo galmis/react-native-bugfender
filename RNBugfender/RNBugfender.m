@@ -14,9 +14,12 @@
 
 RCT_EXPORT_MODULE();
 
-RCT_EXPORT_METHOD(initialise) {
-    // Activate the remote logger with an App Key.
-    [Bugfender enableAllWithToken:@"YOUR_API_KEY"];
+RCT_EXPORT_METHOD(enableAllWithToken: (NSString*)appToken) {
+    [Bugfender enableAllWithToken: appToken];
+}
+
+RCT_EXPORT_METHOD(activateLogger: (NSString*)appToken) {
+    [Bugfender activateLogger: appToken];
 }
 
 RCT_EXPORT_METHOD(info: (NSString*)logText) {
@@ -29,6 +32,26 @@ RCT_EXPORT_METHOD(warning: (NSString*)logText) {
 
 RCT_EXPORT_METHOD(error: (NSString*)logText) {
     BFLogErr(@"%@", logText);
+}
+
+RCT_EXPORT_METHOD(sendIssueWithTitle: (NSString*)title text:(NSString*)text) {
+    [Bugfender sendIssueWithTitle:title text: text];
+}
+
+RCT_EXPORT_METHOD(enableUIEventLogging) {
+    [Bugfender enableUIEventLogging];
+}
+
+RCT_EXPORT_METHOD(setMaximumLocalStorageSize:(NSUInteger)maximumLocalStorageSize) {
+    [Bugfender setMaximumLocalStorageSize: maximumLocalStorageSize];
+}
+
+RCT_EXPORT_METHOD(forceSendOnce) {
+    [Bugfender forceSendOnce];
+}
+
+RCT_EXPORT_METHOD(setForceEnabled:(BOOL)enabled) {
+    [Bugfender setForceEnabled: enabled];
 }
 
 @end
