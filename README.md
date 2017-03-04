@@ -31,6 +31,7 @@ Get an API key from the [Bugfender console](https://app.bugfender.com/). In your
     [Bugfender activateLogger:@"YOUR_APP_KEY"];
     ...
 }
+```
 
 
 ## Usage:
