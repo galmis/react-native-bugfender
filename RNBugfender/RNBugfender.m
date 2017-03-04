@@ -14,10 +14,6 @@
 
 RCT_EXPORT_MODULE();
 
-RCT_EXPORT_METHOD(enableAllWithToken: (NSString*)appToken) {
-    [Bugfender enableAllWithToken: appToken];
-}
-
 RCT_EXPORT_METHOD(activateLogger: (NSString*)appToken) {
     [Bugfender activateLogger: appToken];
 }
