@@ -15,6 +15,23 @@ A wrapper around BugfenderSDK-iOS, bugfender docs https://github.com/bugfender/B
 5. Go to Build Settings and search for "framework search path". Add the following item to it (select recursive):
 $(PROJECT_DIR)/../node_modules/react-native-bugfender [recursive]
 
+6. Make Bugfender available project-wide by adding the following line to the `.pch` file:
+
+```objective-c
+#import <BugfenderSDK/BugfenderSDK.h>
+```
+
+Get an API key from the [Bugfender console](https://app.bugfender.com/). In your `AppDelegate` call [activateLogger](http://cocoadocs.org/docsets/BugfenderSDK/0.3.9/Classes/Bugfender.html#//api/name/activateLogger:) when the application starts, like this:
+
+```objective-c
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    ...
+    // Activate the remote logger with an App Key.
+    [Bugfender activateLogger:@"YOUR_APP_KEY"];
+    ...
+}
+
 
 ## Usage:
 
