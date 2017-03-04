@@ -1,6 +1,8 @@
 # react-native-bugfender
 
-A wrapper around BugfenderSDK-iOS, bugfender docs https://github.com/bugfender/BugfenderSDK-iOS, sign up https://app.bugfender.com/signup?coupon-code=Q1UG5INPSD
+A wrapper around BugfenderSDK-iOS, bugfender docs https://github.com/bugfender/BugfenderSDK-iOS, 
+
+sign up https://app.bugfender.com/signup?coupon-code=Q1UG5INPSD
 
 ## Set up:
 
