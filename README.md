@@ -30,7 +30,6 @@ import Bugfender from 'react-native-bugfender';
 * @throws `NSInvalidArgumentException` if Bugfender has already been initialized
 with a different app token.
 **/
-
 Bugfender.activateLogger('YOUR_APP_TOKEN');
 
 /**
