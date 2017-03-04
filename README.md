@@ -18,6 +18,8 @@ $(PROJECT_DIR)/../node_modules/react-native-bugfender [recursive]
 
 ## Usage:
 
+
+```Javascript
 import Bugfender from 'react-native-bugfender';
 
 
@@ -28,6 +30,7 @@ import Bugfender from 'react-native-bugfender';
 * @throws `NSInvalidArgumentException` if Bugfender has already been initialized
 with a different app token.
 **/
+
 Bugfender.activateLogger('YOUR_APP_TOKEN');
 
 /**
@@ -90,3 +93,4 @@ Bugfender.forceSendOnce();
 * @param enabled Whether logs should be sent regardless of the Bugfender Console settings.
 */
 Bugfender.setForceEnabled(enabled);
+```
