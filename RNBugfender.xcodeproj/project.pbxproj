@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		84BC08A41D10B8AC00339223 /* RNBugfender.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84BC08A31D10B8AC00339223 /* RNBugfender.h */; };
 		84BC08A61D10B8AC00339223 /* RNBugfender.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC08A51D10B8AC00339223 /* RNBugfender.m */; };
-		84D6F71C1D134DC800FDC986 /* BugfenderSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D6F71B1D134DC800FDC986 /* BugfenderSDK.framework */; };
-		84D6F71E1D13523000FDC986 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D6F71D1D13523000FDC986 /* SystemConfiguration.framework */; };
-		84D6F7201D13524500FDC986 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D6F71F1D13524500FDC986 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,9 +28,6 @@
 		84BC08A01D10B8AC00339223 /* libRNBugfender.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNBugfender.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BC08A31D10B8AC00339223 /* RNBugfender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNBugfender.h; sourceTree = "<group>"; };
 		84BC08A51D10B8AC00339223 /* RNBugfender.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNBugfender.m; sourceTree = "<group>"; };
-		84D6F71B1D134DC800FDC986 /* BugfenderSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BugfenderSDK.framework; sourceTree = "<group>"; };
-		84D6F71D1D13523000FDC986 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		84D6F71F1D13524500FDC986 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,9 +35,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D6F7201D13524500FDC986 /* MobileCoreServices.framework in Frameworks */,
-				84D6F71E1D13523000FDC986 /* SystemConfiguration.framework in Frameworks */,
-				84D6F71C1D134DC800FDC986 /* BugfenderSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,11 +44,8 @@
 		84BC08971D10B8AC00339223 = {
 			isa = PBXGroup;
 			children = (
-				84D6F71F1D13524500FDC986 /* MobileCoreServices.framework */,
-				84D6F71D1D13523000FDC986 /* SystemConfiguration.framework */,
 				84BC08A21D10B8AC00339223 /* RNBugfender */,
 				84BC08A11D10B8AC00339223 /* Products */,
-				84D6F71B1D134DC800FDC986 /* BugfenderSDK.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,6 +173,7 @@
 					"$(SRCROOT)/../../React/**",
 					"$(SRCROOT)/../react-native/React/**",
 					"$(SRCROOT)/node_modules/react-native/React/**",
+					"$(SRCROOT)/../../ios/Pods/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -230,6 +219,7 @@
 					"$(SRCROOT)/../../React/**",
 					"$(SRCROOT)/../react-native/React/**",
 					"$(SRCROOT)/node_modules/react-native/React/**",
+					"$(SRCROOT)/../../ios/Pods/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -244,6 +234,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(SRCDIR)/../../ios/Pods/BugfenderSDK",
+					"$(SRCDIR)/../../ios/Frameworks",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -257,6 +249,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(SRCDIR)/../../ios/Pods/BugfenderSDK",
+					"$(SRCDIR)/../../ios/Frameworks",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

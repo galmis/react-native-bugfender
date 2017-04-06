@@ -1,0 +1,5 @@
+rootProject.name = 'BugFenderExample'
+include ':react-native-bugfender'
+project(':react-native-bugfender').projectDir = new File(rootProject.projectDir, '../../../android')
+
+include ':app'

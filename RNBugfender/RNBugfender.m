@@ -15,7 +15,9 @@
 RCT_EXPORT_MODULE();
 
 RCT_EXPORT_METHOD(activateLogger: (NSString*)appToken) {
-    [Bugfender activateLogger: appToken];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [Bugfender activateLogger: appToken];
+    });
 }
 
 RCT_EXPORT_METHOD(info: (NSString*)logText) {
