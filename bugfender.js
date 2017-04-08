@@ -1,17 +1,18 @@
 'use strict';
 
-import ReactNative from 'react-native';
-const RNBugfender = ReactNative.NativeModules.RNBugfender;
+import { NativeModules, Platform } from 'react-native';
+const { RNBugfender } = NativeModules;
 
 /**
  * Activates the Bugfender for a specific app.
  * @param appToken The app token of the Bugfender application
+ * @param debug Android only . Indicates whether Bugfender needs to be displayed in Logcat
  * @discussion This method needs to be called before any BFLog call, otherwise the `BFInvalidMethodCallException` exception will be thrown.
  * @throws `NSInvalidArgumentException` if Bugfender has already been initialized
     with a different app token.
  **/
-function activateLogger(appToken) {
-  RNBugfender.activateLogger(appToken);
+function activateLogger(appToken, debug = true) {
+  Platform.OS === 'ios' ? RNBugfender.activateLogger(appToken) : RNBugfender.activateLogger(appToken, debug);
 }
 
 /**
@@ -57,7 +58,7 @@ function enableUIEventLogging() {
  * Set the maximum space availalbe to store local logs. This value is represented in bytes. There's a limit of 50 MB.
  **/
 function setMaximumLocalStorageSize(maxLocalStorageSize) {
-  RNBugfender.maxLocalStorageSize(maxLocalStorageSize);
+  RNBugfender.setMaximumLocalStorageSize(maxLocalStorageSize);
 }
 
 /**

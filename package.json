@@ -11,6 +11,11 @@
   "peerDependencies": {
     "react-native": ">=0.27.2"
   },
+  "rnpm": {
+    "android": {
+      "sourceDir": "./android"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Reptilijonas/react-native-bugfender.git"
