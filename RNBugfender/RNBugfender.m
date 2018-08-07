@@ -52,4 +52,11 @@ RCT_EXPORT_METHOD(setForceEnabled:(BOOL)enabled) {
     [Bugfender setForceEnabled: enabled];
 }
 
+RCT_REMAP_METHOD(deviceIdentifier,
+                resolver:(RCTPromiseResolveBlock)resolve
+                rejecter:(RCTPromiseRejectBlock)reject) {
+    NSString *identifier = [Bugfender deviceIdentifier];
+    resolve(identifier);
+}
+
 @end

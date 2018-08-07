@@ -2,6 +2,7 @@ package com.galmis.rnbugfender;
 
 import com.bugfender.sdk.Bugfender;
 import com.facebook.react.*;
+import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
@@ -69,5 +70,10 @@ public class RNBugfenderModule extends ReactContextBaseJavaModule{
   @ReactMethod
   public void setForceEnabled(boolean value){
     Bugfender.setForceEnabled(value);
+  }
+
+  @ReactMethod
+  public void deviceIdentifier(Promise promise) {
+    promise.resolve(Bugfender.getDeviceIdentifier());
   }
 }
