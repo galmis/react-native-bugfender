@@ -236,6 +236,7 @@
 					"$(PROJECT_DIR)",
 					"$(SRCDIR)/../../ios/Pods/BugfenderSDK",
 					"$(SRCDIR)/../../ios/Frameworks",
+					"$(PROJECT_DIR)/../../ios/Frameworks",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -251,6 +252,7 @@
 					"$(PROJECT_DIR)",
 					"$(SRCDIR)/../../ios/Pods/BugfenderSDK",
 					"$(SRCDIR)/../../ios/Frameworks",
+					"$(PROJECT_DIR)/../../ios/Frameworks",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
