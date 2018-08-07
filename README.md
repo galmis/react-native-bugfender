@@ -1,31 +1,35 @@
 # react-native-bugfender
 
-A wrapper around BugfenderSDK-iOS, bugfender docs https://github.com/bugfender/BugfenderSDK-iOS, 
+A wrapper around BugfenderSDK
 
-sign up https://app.bugfender.com/signup?coupon-code=Q1UG5INPSD
+Bugfender [iOS docs](https://github.com/bugfender/BugfenderSDK-iOS) or [Android docs](https://github.com/bugfender/BugfenderSDK-android-sample).
 
-## Set up:
+Sign up [here](https://app.bugfender.com/signup)
 
-1. rnpm install react-native-bugfender
+## Set up (iOS):
 
-2. git clone https://github.com/bugfender/BugfenderSDK-iOS.git or just download the BugfenderSDK-iOS from https://github.com/bugfender/BugfenderSDK-iOS
+1. Either `npm i react-native-bugfender` or `yarn add react-native-bugfender`
 
-3. Drag BugfenderSDK.framework to react-native-bugfender folder. In most cases, it would be YOUR_PROJECT/node_modules/react-native-bugfender
+2. Clone the bugfender sdk: `git clone https://github.com/bugfender/BugfenderSDK-iOS.git` or just download it from [BugfenderSDK-iOS](https://github.com/bugfender/BugfenderSDK-iOS)
 
-4. Go to your Project > Your Target > General > Linked Frameworks and Libraries and either drag BugfenderSDK.framework there or press + >>> press Add Other... >>> select BugfenderSDK.framework from YOUR_PROJECT/node_modules/react-native-bugfender. Make sure you have SystemConfiguration.framework and MobileCoreServices.framework there as well.
+3. Create a `Frameworks` folder in your `ios` project.
 
-5. Go to Build Settings and search for "framework search path". Add the following item to it (select recursive):
-$(PROJECT_DIR)/../node_modules/react-native-bugfender [recursive]
+4. Drag `BugfenderSDK.framework` to the `Frameworks` folder.
+
+5. Go to your Project > Your Target > General > Linked Frameworks and Libraries and either drag `BugfenderSDK.framework` there or press + >>> press Add Other... >>> select BugfenderSDK.framework from `YOUR_PROJECT/ios/Frameworks`. Make sure you have `SystemConfiguration.framework` and `MobileCoreServices.framework` there as well.
+
+6. Go to Build Settings and search for "framework search path". Add the following item to it (select recursive):
+`$(PROJECT_DIR)/../Frameworks` [recursive]
 
 6. Make Bugfender available project-wide by adding the following line to the `.pch` file:
 
-```objective-c
+```objc
 #import <BugfenderSDK/BugfenderSDK.h>
 ```
 
 Get an API key from the [Bugfender console](https://app.bugfender.com/). In your `AppDelegate` call [activateLogger](http://cocoadocs.org/docsets/BugfenderSDK/0.3.9/Classes/Bugfender.html#//api/name/activateLogger:) when the application starts, like this:
 
-```objective-c
+```objc
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     ...
@@ -35,13 +39,15 @@ Get an API key from the [Bugfender console](https://app.bugfender.com/). In your
 }
 ```
 
+## Setup (android)
+
+Follow the instructions provided [here](
+https://github.com/bugfender/BugfenderSDK-android-sample)
 
 ## Usage:
 
-
-```Javascript
+```js
 import Bugfender from 'react-native-bugfender';
-
 
 /**
 * Activates the Bugfender for a specific app.
@@ -112,4 +118,11 @@ Bugfender.forceSendOnce();
 * @param enabled Whether logs should be sent regardless of the Bugfender Console settings.
 */
 Bugfender.setForceEnabled(enabled);
+
+/**
+ * Gets the bugfender device unique identifier
+ * @returns a promise with the device identifier
+ **/
+
+let deviceId = await Bugfender.deviceIdentifier();
 ```
